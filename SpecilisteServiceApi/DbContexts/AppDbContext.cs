@@ -15,16 +15,33 @@ namespace SpecilisteServiceApi.DbContexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            Guid myuuid = Guid.NewGuid();
+            //Guid myuuid = Guid.NewGuid();
             modelBuilder.Entity<Specialist>().HasData(new Specialist
             {
                 Image = "https://ilchiro.org/wp-content/uploads/2019/06/storyblocks-happy-doctor-standing-with-a-laptop_S8lrSrNa-z-1-1280x640.jpg",
                 SpecialistEmail = "Bouzri@gmail.com",
-                SpecialistID = myuuid.ToString(),
+                SpecialistID = Guid.NewGuid().ToString(),
                 SpecialistName = "Bouzri Mohamed",
                 SpecialistTel = "06555891",
             });
-            
+            modelBuilder.Entity<Specialist>().HasData(new Specialist
+            {
+                Image = "https://ilchiro.org/wp-content/uploads/2019/06/storyblocks-happy-doctor-standing-with-a-laptop_S8lrSrNa-z-1-1280x640.jpg",
+                SpecialistEmail = "sanae@gmail.com",
+                SpecialistID = Guid.NewGuid().ToString(),
+                SpecialistName = "Bouzri Sanae",
+                SpecialistTel = "06555891",
+            });
+
+            modelBuilder.Entity<Specialist>().HasData(new Specialist
+            {
+                Image = "https://ilchiro.org/wp-content/uploads/2019/06/storyblocks-happy-doctor-standing-with-a-laptop_S8lrSrNa-z-1-1280x640.jpg",
+                SpecialistEmail = "jana@gmail.com",
+                SpecialistID = Guid.NewGuid().ToString(),
+                SpecialistName = "Bouzri Jana",
+                SpecialistTel = "06555891",
+            });
+
 
         }
     }

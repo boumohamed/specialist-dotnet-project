@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace SpecilisteServiceApi.Controllers
 {
-    [Route("api/")]
+    [Route("api/specialits/")]
     [ApiController]
     public class SpecialistController : ControllerBase
     {
@@ -21,10 +21,18 @@ namespace SpecilisteServiceApi.Controllers
             _response = new ResponseDto();
         }
         [HttpGet]
-        [Route("specialits")]
+        [Route("list")]
         public async Task<object> Get()
         {
             IEnumerable<SpecialistDto> res = await _specialistRepository.GetSpecialists();
+            return res;
+        }
+
+        [HttpGet]
+        [Route("list/{name}")]
+        public async Task<object> GetByName([FromRoute] string name)
+        {
+            IEnumerable<SpecialistDto> res = await _specialistRepository.SearchSpecialistByName(name);
             return res;
         }
 
@@ -42,8 +50,8 @@ namespace SpecilisteServiceApi.Controllers
         }
 
         [HttpGet]
-        [Route("specialists/{id}")]
-        public async Task<ResponseDto> getSpecialistById([FromRoute]  string id)
+        [Route("{id}")]
+        public async Task<ResponseDto> getSpecialistById([FromRoute] string id)
         {
 
             SpecialistDto res = await _specialistRepository.GetSpecialistById(id);
@@ -64,13 +72,23 @@ namespace SpecilisteServiceApi.Controllers
         }
 
         [HttpDelete]
-        [Route("specialists/{id}")]
-        public async Task<bool> deleteById([FromRoute] string id)
+        [Route("{id}")]
+        public async Task<ResponseDto> deleteById([FromRoute] string id)
+        {
+            
+            return await _specialistRepository.DeleteSpecialist(id); ;
+
+        }
+
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<ResponseDto> update(SpecialistRequestDto requestDto, [FromRoute] string id)
         {
 
-            bool res = await _specialistRepository.DeleteSpecialist(id);
-            
-            return res;
+            SpecialistDto res = await _specialistRepository.UpdateSpecialist(requestDto, id);
+            _response.result = res;
+            _response.success = true;
+            return _response;
 
         }
     }
