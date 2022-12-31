@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebSpeciliste.Models.SpecialistDto>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="@Url.Content(item.Image)" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@item.SpecialistName</h5>
+                    <p class="card-text">@item.SpecialistEmail</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

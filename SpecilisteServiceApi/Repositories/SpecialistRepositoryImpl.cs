@@ -26,7 +26,7 @@ namespace SpecilisteServiceApi.Repositories
                 Specialist specialist = _mapper.Map<Specialist>(request);
                 specialist.SpecialistID = UUID.ToString();
                 _db.Specialists.Add(specialist);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
                 Specialist response = await _db.Specialists.Where(p => p.SpecialistID == specialist.SpecialistID).FirstAsync();
                 return _mapper.Map<SpecialistDto>(response);
             }
@@ -36,11 +36,11 @@ namespace SpecilisteServiceApi.Repositories
         public async Task<ResponseDto> DeleteSpecialist(string id)
         {
             ResponseDto res = new ResponseDto();
-            Specialist toDelete = await _db.Specialists.Where(p => p.SpecialistID == id).FirstOrDefaultAsync();
+            Specialist toDelete = await _db.Specialists.FirstOrDefaultAsync(p => p.SpecialistID == id);
             if(toDelete != null)
             {
                 _db.Specialists.Remove(toDelete);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             else
             {
@@ -64,7 +64,7 @@ namespace SpecilisteServiceApi.Repositories
 
         public async Task<SpecialistDto> GetSpecialistById(string id)
         {
-            Specialist response = await _db.Specialists.Where(p => p.SpecialistID == id).FirstOrDefaultAsync();
+            Specialist response = await _db.Specialists.FirstOrDefaultAsync(p => p.SpecialistID == id);
             if(response != null)
             {
                 SpecialistDto specialistDto = _mapper.Map<SpecialistDto>(response);
@@ -94,13 +94,14 @@ namespace SpecilisteServiceApi.Repositories
                 Specialist specialist = _mapper.Map<Specialist>(request);
                 specialist.SpecialistID = id;
                 _db.Specialists.Update(specialist);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
                 Specialist response = await _db.Specialists.Where(p => p.SpecialistID == specialist.SpecialistID).FirstAsync();
                 return _mapper.Map<SpecialistDto>(response);
             }
             return null;
 
         }
-        
+
+
     }
 }

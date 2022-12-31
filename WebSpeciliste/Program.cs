@@ -1,6 +1,14 @@
+using WebSpeciliste;
+using WebSpeciliste.services;
+using WebSpeciliste.services.SpecialistsService;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<ISpecialist, SpecialistService>();
+builder.Services.AddHttpClient<ISpecialist, SpecialistService>();
+SD.host = builder.Configuration["ServiceUrls:SpecialistAPI"];
+builder.Services.AddScoped<ISpecialist, SpecialistService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -15,6 +23,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+
 
 app.UseRouting();
 

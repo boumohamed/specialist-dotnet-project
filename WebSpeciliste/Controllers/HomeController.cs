@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebSpeciliste.Models;
+using WebSpeciliste.services.SpecialistsService;
 
 namespace WebSpeciliste.Controllers
 {
@@ -15,6 +16,7 @@ namespace WebSpeciliste.Controllers
 
         public IActionResult Index()
         {
+            
             return View();
         }
 

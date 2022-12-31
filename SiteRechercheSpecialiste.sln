@@ -5,11 +5,14 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{F82365E2-ECD2-4A1C-B104-E6B22FB7B76A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSpeciliste", "WebSpeciliste\WebSpeciliste.csproj", "{30DC884F-CA4A-4533-8721-A72DAA35507A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSpeciliste", "WebSpeciliste\WebSpeciliste.csproj", "{30DC884F-CA4A-4533-8721-A72DAA35507A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21A82AF1-8D7C-409A-9F2B-01C4EE611163} = {21A82AF1-8D7C-409A-9F2B-01C4EE611163}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{66758C88-8E2B-4563-9663-C87B4FC8E93C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecilisteServiceApi", "SpecilisteServiceApi\SpecilisteServiceApi.csproj", "{21A82AF1-8D7C-409A-9F2B-01C4EE611163}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecilisteServiceApi", "SpecilisteServiceApi\SpecilisteServiceApi.csproj", "{21A82AF1-8D7C-409A-9F2B-01C4EE611163}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

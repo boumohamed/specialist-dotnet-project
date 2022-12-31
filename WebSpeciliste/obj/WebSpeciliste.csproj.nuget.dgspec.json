@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Aggregates.NET.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[0.18.8.113, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

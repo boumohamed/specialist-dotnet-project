@@ -22,10 +22,12 @@ namespace SpecilisteServiceApi.Controllers
         }
         [HttpGet]
         [Route("list")]
-        public async Task<object> Get()
+        public async Task<ResponseDto> GetSpecialistsList()
         {
             IEnumerable<SpecialistDto> res = await _specialistRepository.GetSpecialists();
-            return res;
+            _response.success = true;
+            _response.result = res;
+            return _response;
         }
 
         [HttpGet]
@@ -86,11 +88,23 @@ namespace SpecilisteServiceApi.Controllers
         {
 
             SpecialistDto res = await _specialistRepository.UpdateSpecialist(requestDto, id);
-            _response.result = res;
-            _response.success = true;
+            if(res == null)
+            {
+                _response.result = null;
+                _response.success = false;
+                _response.DisplayMessage = "recorrd Not Found";
+            }
+            else
+            {
+                _response.result = res;
+                _response.success = true;
+            }
+
             return _response;
 
         }
+
+        
     }
 
 }

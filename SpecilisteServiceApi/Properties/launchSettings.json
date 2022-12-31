@@ -8,6 +8,7 @@
       "sslPort": 44398
     }
   },
+
   "profiles": {
     "SpecilisteServiceApi": {
       "commandName": "Project",

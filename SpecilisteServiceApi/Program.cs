@@ -23,6 +23,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<SpecialistRepository, SpecialistRepositoryImpl>();
 
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
