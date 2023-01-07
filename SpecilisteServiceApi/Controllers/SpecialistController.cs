@@ -57,18 +57,22 @@ namespace SpecilisteServiceApi.Controllers
         {
 
             SpecialistDto res = await _specialistRepository.GetSpecialistById(id);
+            _response.success = true;
+            _response.result = res;
+            /*
             if(res == null)
             {
                 _response.success = false;
                 _response.result = null;
                 //_response.errorMessages.Add(new string("Record not found"));
                 _response.DisplayMessage = "Record not found";
+                return _response;
             }
-            else
-            {
-                _response.success = true;
-                _response.result = res;
-            }
+            
+            _response.success = true;
+            _response.result = res;
+            */
+            
             return _response;           
 
         }

@@ -24,7 +24,7 @@ namespace SpecilisteServiceApi.Repositories
             {
                 Guid UUID = Guid.NewGuid();
                 Specialist specialist = _mapper.Map<Specialist>(request);
-                specialist.SpecialistID = UUID.ToString();
+                specialist.SpecialistID = UUID.ToString().Replace("-", "");
                 _db.Specialists.Add(specialist);
                 await _db.SaveChangesAsync();
                 Specialist response = await _db.Specialists.Where(p => p.SpecialistID == specialist.SpecialistID).FirstAsync();
@@ -64,13 +64,8 @@ namespace SpecilisteServiceApi.Repositories
 
         public async Task<SpecialistDto> GetSpecialistById(string id)
         {
-            Specialist response = await _db.Specialists.FirstOrDefaultAsync(p => p.SpecialistID == id);
-            if(response != null)
-            {
-                SpecialistDto specialistDto = _mapper.Map<SpecialistDto>(response);
-                return specialistDto;
-            }
-            return null;
+            Specialist response = await _db.Specialists.Where(p => p.SpecialistID == id).FirstOrDefaultAsync();
+            return _mapper.Map<SpecialistDto>(response); ;
         }
 
         public async Task<IEnumerable<SpecialistDto>> GetSpecialists()

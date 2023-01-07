@@ -14,7 +14,7 @@ namespace WebSpeciliste.services
             _clientFactory = httpClient;
         }
 
-        public async Task<T> CreateSpecialistAsync<T>(SpecialistDto specialist, string accessToken)
+        public async Task<T> CreateSpecialistAsync<T>(SpecialistDto specialist)
         {
             return await this.SendDataAsync<T>(new ApiRequest()
             {
@@ -24,13 +24,13 @@ namespace WebSpeciliste.services
             });
         }
 
-        public async Task<T> DeleteSpecialistAsync<T>(string id, string accessToken)
+        public async Task<T> DeleteSpecialistAsync<T>(string id)
         {
             return await this.SendDataAsync<T>(new ApiRequest()
             {
                 method = SD.MethodType.DELETE,
                 url = SD.host + "/api/specialits/" + id,
-                accessToken = accessToken
+                //accessToken = accessToken
             });
         }
 
@@ -46,35 +46,35 @@ namespace WebSpeciliste.services
             });
         }
 
-        public async Task<T> GetOneSpecialistByIdAsync<T>(string id, string accessToken)
+        public async Task<T> GetOneSpecialistByIdAsync<T>(string id)
         {
             return await this.SendDataAsync<T>(new ApiRequest()
             {
                 method = SD.MethodType.GET,
-                url = SD.host + "​/api​/specialits/" + id,
-                accessToken = accessToken
+                url = SD.host + "/api/specialits/" + id,
+                //accessToken = accessToken
             });
         }
 
-        public async Task<T> SeachSpecialistByNameAsync<T>(string name, string accessToken)
+        public async Task<T> SeachSpecialistByNameAsync<T>(string name)
         {
             return await this.SendDataAsync<T>(new ApiRequest()
             {
                 method = SD.MethodType.GET,
                 url = SD.host + "​/api​/specialits/list/" + name,
-                accessToken = accessToken
+                //accessToken = accessToken
             });
         }
 
         
-        public async Task<T> UpdateSpecialistAsync<T>(string id, SpecialistDto specialist, string accessToken)
+        public async Task<T> UpdateSpecialistAsync<T>(string id, SpecialistDto specialist)
         {
             return await this.SendDataAsync<T>(new ApiRequest()
             {
                 method = SD.MethodType.PUT,
                 data = specialist,
                 url = SD.host + "/api/specialits/" + id,
-                accessToken = accessToken
+                //accessToken = accessToken
             });
         }
     }
