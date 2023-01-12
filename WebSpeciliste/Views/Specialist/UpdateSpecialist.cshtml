@@ -3,7 +3,7 @@
 
 <div class="container-xxl py-5 bg-dark page-header mb-5">
     <div class="container my-5 pt-5 pb-4">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">@Model.SpecialistName 's Profile</h1>
+        <h1 class="display-3 text-white mb-3 animated slideInDown">@Model.FirstName 's Profile</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb text-uppercase">
                 <li class="breadcrumb-item"><a asp-action="SpecialistsCrud">Specialist</a></li>
@@ -21,21 +21,28 @@
                 <div class="row g-3">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="col-md-12">
-                        <input asp-for="SpecialistID" hidden/>
+                        <input asp-for="id" hidden/>
                         <div class="form-floating">
-                            <input type="text" asp-for="SpecialistName" class="form-control" id="name" placeholder="Your Name">
-                            <label for="name">Name</label>
+                            <input type="text" asp-for="FirstName" class="form-control" id="FirstName" placeholder="Your First Name">
+                            <label for="name">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input asp-for="id" hidden />
+                        <div class="form-floating">
+                            <input type="text" asp-for="LastName" class="form-control" id="LastName" placeholder="Your Last Name">
+                            <label for="name">First Name</label>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="form-floating">
-                            <input type="email" asp-for="SpecialistEmail" class="form-control" id="email" placeholder="Your Email">
+                            <input type="email" asp-for="Email" class="form-control" id="email" placeholder="Your Email">
                             <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="form-floating">
-                            <input type="text" asp-for="SpecialistTel" class="form-control" id="phone" placeholder="Your Phone">
+                            <input type="text" asp-for="Tel" class="form-control" id="phone" placeholder="Your Phone">
                             <label for="email">Phone</label>
                         </div>
                     </div>
@@ -43,6 +50,13 @@
                         <div class="form-floating">
                             <input type="File" class="form-control" placeholder="Your Image">
                             <label for="email">Image</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input asp-for="id" hidden />
+                        <div class="form-floating">
+                            <input type="text" asp-for="Speciality" class="form-control" id="Speciality" placeholder="Your Last Speciality">
+                            <label for="name">Speciality</label>
                         </div>
                     </div>
                     <div class="col-12">

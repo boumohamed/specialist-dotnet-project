@@ -53,6 +53,8 @@ namespace WebSpeciliste.Controllers
 
             if(ModelState.IsValid)
             {
+                model.joined = DateTime.Now;
+                //model.Email = "bzr@gmail.com";
                 var res = await _SpecialistService.CreateSpecialistAsync<ResponseDto>(model);
                 if (res != null && res.success)
                 {

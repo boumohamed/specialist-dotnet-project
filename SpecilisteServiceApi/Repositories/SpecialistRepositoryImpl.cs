@@ -24,10 +24,10 @@ namespace SpecilisteServiceApi.Repositories
             {
                 Guid UUID = Guid.NewGuid();
                 Specialist specialist = _mapper.Map<Specialist>(request);
-                specialist.SpecialistID = UUID.ToString().Replace("-", "");
+                specialist.id = UUID.ToString().Replace("-", "");
                 _db.Specialists.Add(specialist);
                 await _db.SaveChangesAsync();
-                Specialist response = await _db.Specialists.Where(p => p.SpecialistID == specialist.SpecialistID).FirstAsync();
+                Specialist response = await _db.Specialists.Where(p => p.id == specialist.id).FirstAsync();
                 return _mapper.Map<SpecialistDto>(response);
             }
             return null;
@@ -36,7 +36,7 @@ namespace SpecilisteServiceApi.Repositories
         public async Task<ResponseDto> DeleteSpecialist(string id)
         {
             ResponseDto res = new ResponseDto();
-            Specialist toDelete = await _db.Specialists.FirstOrDefaultAsync(p => p.SpecialistID == id);
+            Specialist toDelete = await _db.Specialists.FirstOrDefaultAsync(p => p.id == id);
             if(toDelete != null)
             {
                 _db.Specialists.Remove(toDelete);
@@ -49,7 +49,7 @@ namespace SpecilisteServiceApi.Repositories
                 return res;
             }
             
-            Specialist delete = await _db.Specialists.Where(p => p.SpecialistID == id).FirstOrDefaultAsync();
+            Specialist delete = await _db.Specialists.Where(p => p.id == id).FirstOrDefaultAsync();
             if (delete != null)
             {
                 res.success = false;
@@ -64,7 +64,7 @@ namespace SpecilisteServiceApi.Repositories
 
         public async Task<SpecialistDto> GetSpecialistById(string id)
         {
-            Specialist response = await _db.Specialists.Where(p => p.SpecialistID == id).FirstOrDefaultAsync();
+            Specialist response = await _db.Specialists.Where(p => p.id == id).FirstOrDefaultAsync();
             return _mapper.Map<SpecialistDto>(response); ;
         }
 
@@ -76,7 +76,7 @@ namespace SpecilisteServiceApi.Repositories
 
         public async Task<IEnumerable<SpecialistDto>> SearchSpecialistByName(string name)
         {
-            List<Specialist> list = await _db.Specialists.Where(s => s.SpecialistName.ToLower().Contains(name.ToLower())).ToListAsync();
+            List<Specialist> list = await _db.Specialists.Where(s => s.LastName.ToLower().Contains(name.ToLower())).ToListAsync();
             return _mapper.Map<List<SpecialistDto>>(list);
         }
 
@@ -87,10 +87,10 @@ namespace SpecilisteServiceApi.Repositories
             if (request != null)
             {
                 Specialist specialist = _mapper.Map<Specialist>(request);
-                specialist.SpecialistID = id;
+                specialist.id = id;
                 _db.Specialists.Update(specialist);
                 await _db.SaveChangesAsync();
-                Specialist response = await _db.Specialists.Where(p => p.SpecialistID == specialist.SpecialistID).FirstAsync();
+                Specialist response = await _db.Specialists.Where(p => p.id == specialist.id).FirstAsync();
                 return _mapper.Map<SpecialistDto>(response);
             }
             return null;

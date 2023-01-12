@@ -25,10 +25,10 @@
                             <div class="col-sm-12 col-md-8 d-flex align-items-center">
                                     <img class="flex-shrink-0 img-fluid border rounded" src="@Url.Content(item.Image)" alt="" style="width: 150px; height: 150px;">
                                 <div class="text-start ps-4">
-                                        <h5 class="mb-3">@item.SpecialistName</h5>
+                                        <h5 class="mb-3">@item.FirstName @item.LastName</h5>
                                     <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
                                     <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                    <span class="text-truncate me-3"><i class="fa fa-phone text-primary me-2"></i>@item.SpecialistTel</span>
+                                    <span class="text-truncate me-3"><i class="fa fa-phone text-primary me-2"></i>@item.Tel</span>
                                     <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
                                 <div class="d-flex mb-3">
                                     <a class="btn btn-primary" href="">Details</a>
                                 </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>@item.joined</small>
                             </div>
                             }
                         </div>

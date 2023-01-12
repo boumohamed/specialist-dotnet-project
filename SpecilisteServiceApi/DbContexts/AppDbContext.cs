@@ -19,27 +19,38 @@ namespace SpecilisteServiceApi.DbContexts
             modelBuilder.Entity<Specialist>().HasData(new Specialist
             {
                 Image = "https://ilchiro.org/wp-content/uploads/2019/06/storyblocks-happy-doctor-standing-with-a-laptop_S8lrSrNa-z-1-1280x640.jpg",
-                SpecialistEmail = "Bouzri@gmail.com",
-                SpecialistID = Guid.NewGuid().ToString(),
-                SpecialistName = "Bouzri Mohamed",
-                SpecialistTel = "06555891",
+                Email = "Bouzri@gmail.com",
+                id = Guid.NewGuid().ToString(),
+                FirstName = "Mohamed",
+                LastName = "Bouzri",
+                Tel = "06555891",
+                Speciality = "Medcin",
+                city = "Casablanca",
+                joined = DateTime.Now
             });
             modelBuilder.Entity<Specialist>().HasData(new Specialist
             {
                 Image = "https://ilchiro.org/wp-content/uploads/2019/06/storyblocks-happy-doctor-standing-with-a-laptop_S8lrSrNa-z-1-1280x640.jpg",
-                SpecialistEmail = "sanae@gmail.com",
-                SpecialistID = Guid.NewGuid().ToString(),
-                SpecialistName = "Bouzri Sanae",
-                SpecialistTel = "06555891",
+                Email = "sanae@gmail.com",
+                id = Guid.NewGuid().ToString(),
+                LastName = "Bouzri",
+                FirstName = "Sanae",
+                Tel = "06555891",
+                Speciality = "Medcin",
+                city = "rabat",
+                joined = DateTime.Now
             });
 
             modelBuilder.Entity<Specialist>().HasData(new Specialist
             {
                 Image = "https://ilchiro.org/wp-content/uploads/2019/06/storyblocks-happy-doctor-standing-with-a-laptop_S8lrSrNa-z-1-1280x640.jpg",
-                SpecialistEmail = "jana@gmail.com",
-                SpecialistID = Guid.NewGuid().ToString(),
-                SpecialistName = "Bouzri Jana",
-                SpecialistTel = "06555891",
+                Email = "jana@gmail.com",
+                id = Guid.NewGuid().ToString(),
+                LastName = "Bouzri",
+                FirstName = "Jana",
+                Speciality = "Medcin",
+                city = "Tanger",
+                joined = DateTime.Now
             });
 
 

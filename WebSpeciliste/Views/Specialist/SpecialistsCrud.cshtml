@@ -27,19 +27,19 @@
                         {
                             <div class="col-sm-12 col-md-8 d-flex align-items-center">
                                 <div class="text-start ps-4">
-                                    <h5 class="mb-3">@item.SpecialistName</h5>
+                                    <h5 class="mb-3">@item.FirstName @item.LastName</h5>
                                     <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
                                     <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                    <span class="text-truncate me-3"><i class="fa fa-phone text-primary me-2"></i>@item.SpecialistTel</span>
+                                    <span class="text-truncate me-3"><i class="fa fa-phone text-primary me-2"></i>@item.Tel</span>
                                     <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                                 <div class="d-flex mb-3">
-                                    <a class="btn btn-primary" asp-controller="Specialist" asp-action="UpdateSpecialist" asp-route-specialistId="@item.SpecialistID"><i class="fa-solid fa-pen"></i></a>
-                                    <a class="btn btn-danger" asp-controller="Specialist" asp-action="DeleteSpecialist" asp-route-specialistId="@item.SpecialistID"><i class="fa-solid fa-trash"></i></a>
+                                    <a class="btn btn-primary" asp-controller="Specialist" asp-action="UpdateSpecialist" asp-route-specialistId="@item.id"><i class="fa-solid fa-pen"></i></a>
+                                    <a class="btn btn-danger" asp-controller="Specialist" asp-action="DeleteSpecialist" asp-route-specialistId="@item.id"><i class="fa-solid fa-trash"></i></a>
                                 </div>
-                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
+                                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>@item.joined</small>
                             </div>
                         }
                     </div>
