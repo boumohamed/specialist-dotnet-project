@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace WebSpeciliste.Models
+﻿namespace WebSpeciliste.Models
 {
     public class SpecialistDto
     {

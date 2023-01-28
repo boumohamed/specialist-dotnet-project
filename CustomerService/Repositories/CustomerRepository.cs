@@ -15,9 +15,11 @@ namespace CustomerService.Repositories
 
         Task<ResponseDto> CreateOffer(string customerId, OfferRequestDto request);
 
+        Task<OfferDto> GetOffer(string id);
 
         Task<IEnumerable<OfferDto>> GetOffersByCustomer(string id);
-        Task<IEnumerable<Offer>> GetOffers(string id);
+        Task<IEnumerable<OfferDto>> GetOffers();
+        Task<IEnumerable<OfferDto>> GetOffersBySpecialityLocationKeyword(string? speciality, string? location, string? keyword);
         /*
         Task<IEnumerable<Offer>> GetOffersByCustomer(string id);
         Task<CustomerDto> CreateOffer(string customerId, OfferRequestDto request);

@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "wTrIXPTmc4pTgT9RiOPSQnjwCrlzSMlg91bJmUh7jN3IbbalsK53GqpGxvoXeKy0zpVEhd9LP8cJoXdK80dJ/Q==",
+  "dgSpecHash": "seReHBJrKO1cptgpS9gWX7GHOTagl5cvzTNKoCCj3MMNGZtx3Zn78/E+OHBYUtQ2RigvfSm3jz8doN24c1WJWw==",
   "success": true,
-  "projectFilePath": "D:\\5IIR\\dotnet\\Project\\SiteRechercheSpecialiste\\WebSpeciliste\\WebSpeciliste.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\WebSpeciliste\\WebSpeciliste.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\aggregates.net\\0.18.8.113\\aggregates.net.0.18.8.113.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\aggregates.net.newtonsoftjson\\0.18.8.113\\aggregates.net.newtonsoftjson.0.18.8.113.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\7.0.0\\microsoft.extensions.hosting.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\BZR-PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\PC\\.nuget\\packages\\aggregates.net\\0.18.8.113\\aggregates.net.0.18.8.113.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\aggregates.net.newtonsoftjson\\0.18.8.113\\aggregates.net.newtonsoftjson.0.18.8.113.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\7.0.0\\microsoft.extensions.hosting.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

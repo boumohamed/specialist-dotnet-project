@@ -118,33 +118,67 @@ namespace CustomerService.Controllers
 
         [HttpGet]
         [Route("offers")]
-        public async Task<ResponseDto> getAllOffers(string id)
+        public async Task<ResponseDto> getAllOffers()
         {
 
-            IEnumerable<Offer> res = await _customerRepository.GetOffers("hhhhhh");
-            _response.success = true;
+            IEnumerable<OfferDto> res = await _customerRepository.GetOffers();
             _response.result = res;
-            /*
+            
             if(res == null)
             {
                 _response.success = false;
-                _response.result = null;
-                //_response.errorMessages.Add(new string("Record not found"));
+                _response.errorMessages.Add("Record not found");
                 _response.DisplayMessage = "Record not found";
                 return _response;
             }
-            
-            _response.success = true;
-            _response.result = res;
-            */
 
             return _response;
 
         }
 
-        
+        [HttpGet]
+        [Route("offers/search")]
+        public async Task<ResponseDto> getAllOffers(string? speciality, string? location, string? keyword)
+        {
+            
+            IEnumerable<OfferDto> res = await _customerRepository.GetOffersBySpecialityLocationKeyword(speciality, location, keyword);
+            _response.result = res;
 
-        
+            if (res == null)
+            {
+                _response.success = false;
+                _response.errorMessages.Add("Record not found");
+                _response.DisplayMessage = "Record not found";
+                return _response;
+            }
+
+            return _response;
+
+        }
+
+        [HttpGet]
+        [Route("offers/{id}")]
+        public async Task<ResponseDto> getOffer(string id)
+        {
+
+            OfferDto res = await _customerRepository.GetOffer(id);
+            _response.result = res;
+
+            if (res == null)
+            {
+                _response.success = false;
+                _response.errorMessages.Add("Record not found");
+                _response.DisplayMessage = "Record not found";
+                return _response;
+            }
+
+            return _response;
+
+        }
+
+
+
+
     }
 
 }

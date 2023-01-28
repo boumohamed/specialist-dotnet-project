@@ -13,7 +13,7 @@ namespace CustomerService
                 config.CreateMap<Customer, CustomerDto>().ReverseMap();
                 config.CreateMap<CustomerRequestDto, Customer>().ReverseMap();
                 config.CreateMap<Offer, OfferRequestDto>().ReverseMap();
-                config.CreateMap<Offer, OfferDto>().ReverseMap();
+                config.CreateMap<OfferDto, Offer>().ReverseMap();
             });
             return mappingConfig;
         }

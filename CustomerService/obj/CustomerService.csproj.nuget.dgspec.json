@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\5IIR\\dotnet\\Project\\SiteRechercheSpecialiste\\CustomerService\\CustomerService.csproj": {}
+    "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\CustomerService\\CustomerService.csproj": {}
   },
   "projects": {
-    "D:\\5IIR\\dotnet\\Project\\SiteRechercheSpecialiste\\CustomerService\\CustomerService.csproj": {
+    "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\CustomerService\\CustomerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\5IIR\\dotnet\\Project\\SiteRechercheSpecialiste\\CustomerService\\CustomerService.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\CustomerService\\CustomerService.csproj",
         "projectName": "CustomerService",
-        "projectPath": "D:\\5IIR\\dotnet\\Project\\SiteRechercheSpecialiste\\CustomerService\\CustomerService.csproj",
-        "packagesPath": "C:\\Users\\BZR-PC\\.nuget\\packages\\",
-        "outputPath": "D:\\5IIR\\dotnet\\Project\\SiteRechercheSpecialiste\\CustomerService\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\CustomerService\\CustomerService.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\CustomerService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\BZR-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

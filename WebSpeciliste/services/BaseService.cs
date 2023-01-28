@@ -21,11 +21,11 @@ namespace WebSpeciliste.services
         
         
 
-        public async Task<T> SendDataAsync<T>(ApiRequest request)
+        public async Task<T> SendDataAsync<T>(ApiRequest request, string api)
         {
             try
             {
-                var client = httpClient.CreateClient("SpecialistAPI");
+                var client = httpClient.CreateClient(api);
                 HttpRequestMessage message = new HttpRequestMessage();
                 message.Headers.Add("Accept", "application/json");
                 message.RequestUri = new Uri(request.url);

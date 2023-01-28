@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@model IEnumerable<WebSpeciliste.Models.OfferDto>
 <div class="container-fluid p-0">
     <div class="owl-carousel header-carousel position-relative">
         <div class="owl-carousel-item position-relative">
@@ -42,37 +42,41 @@
     <div class="container">
         <div class="row g-2">
             <div class="col-md-10">
-                <div class="row g-2">
-                    <div class="col-md-4">
-                        <input type="text" class="form-control border-0" placeholder="Keyword" />
+                <form asp-action="Index">
+                    <div class="row g-2">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control border-0" placeholder="Keyword" name="keyword"/>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select border-0" name="speciality">
+                                <option value="Marketing">Marketing</option>
+                                <option value="Customer Service">Customer Service</option>
+                                <option value="Human Resource">Human Resource</option>
+                                <option value="Project Management">Project Management</option>
+                                <option value="Sales & Communication">Sales & Communication</option>
+                                <option value="Business Development">Business Development</option>
+                                <option value="Teaching & Education">Teaching & Education</option>
+                                <option value="Design & Creative">Design & Creative</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control border-0" placeholder="location" name="location" />
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <select class="form-select border-0">
-                            <option selected>Category</option>
-                            <option value="1">Category 1</option>
-                            <option value="2">Category 2</option>
-                            <option value="3">Category 3</option>
-                        </select>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100" type="submit">Search</button>
                     </div>
-                    <div class="col-md-4">
-                        <select class="form-select border-0">
-                            <option selected>Location</option>
-                            <option value="1">Location 1</option>
-                            <option value="2">Location 2</option>
-                            <option value="3">Location 3</option>
-                        </select>
-                    </div>
-                </div>
+                </form>
             </div>
-            <div class="col-md-2">
-                <button class="btn btn-dark border-0 w-100">Search</button>
-            </div>
+            
+
         </div>
     </div>
 </div>
 <div class="container-xxl py-5">
     <div class="container">
-        <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
+        <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Speciality</h1>
         <div class="row g-4">
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                 <a class="cat-item rounded p-4" href="">

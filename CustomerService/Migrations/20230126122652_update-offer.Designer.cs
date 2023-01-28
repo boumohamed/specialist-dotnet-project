@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CustomerService.Migrations
 {
     [DbContext(typeof(CustomerDBContext))]
-    [Migration("20230114131042_init")]
-    partial class init
+    [Migration("20230126122652_update-offer")]
+    partial class updateoffer
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -66,6 +66,10 @@ namespace CustomerService.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("speciality")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

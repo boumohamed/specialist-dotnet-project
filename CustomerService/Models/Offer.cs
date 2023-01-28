@@ -18,6 +18,18 @@ namespace CustomerService.Models
 
         [Required]
         public DateTime created { get; set; }
+        public DateTime delay { get; set; }
+
+        public string experience { get; set; }
+        public bool diploma { get; set; }
+
+        [Required]
+        public string type { get; set; }
+
+        public string budget { get; set; }
+
+        [Required]
+        public string speciality { get; set; }
 
         public string customerId { get; set; }
         public Customer customer { get; set; }

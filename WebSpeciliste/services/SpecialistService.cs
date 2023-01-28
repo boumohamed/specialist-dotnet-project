@@ -20,8 +20,8 @@ namespace WebSpeciliste.services
             {
                 method = SD.MethodType.POST,
                 data = specialist,
-                url = SD.host + "/api/specialits/create"
-            });
+                url = SD.hostSpecialist + "/api/specialits/create"
+            }, API.SpecialistAPI);
         }
 
         public async Task<T> DeleteSpecialistAsync<T>(string id)
@@ -29,9 +29,9 @@ namespace WebSpeciliste.services
             return await this.SendDataAsync<T>(new ApiRequest()
             {
                 method = SD.MethodType.DELETE,
-                url = SD.host + "/api/specialits/" + id,
+                url = SD.hostSpecialist + "/api/specialits/" + id,
                 //accessToken = accessToken
-            });
+            }, API.SpecialistAPI);
         }
 
 
@@ -41,9 +41,9 @@ namespace WebSpeciliste.services
             return await this.SendDataAsync<T>(new ApiRequest()
             {
                 method = SD.MethodType.GET,
-                url = SD.host + "/api/specialits/list",
+                url = SD.hostSpecialist + "/api/specialits/list",
                 //accessToken = accessToken
-            });
+            }, API.SpecialistAPI);
         }
 
         public async Task<T> GetOneSpecialistByIdAsync<T>(string id)
@@ -51,9 +51,9 @@ namespace WebSpeciliste.services
             return await this.SendDataAsync<T>(new ApiRequest()
             {
                 method = SD.MethodType.GET,
-                url = SD.host + "/api/specialits/" + id,
+                url = SD.hostSpecialist + "/api/specialits/" + id,
                 //accessToken = accessToken
-            });
+            }, API.SpecialistAPI);
         }
 
         public async Task<T> SeachSpecialistByNameAsync<T>(string name)
@@ -61,9 +61,9 @@ namespace WebSpeciliste.services
             return await this.SendDataAsync<T>(new ApiRequest()
             {
                 method = SD.MethodType.GET,
-                url = SD.host + "​/api​/specialits/list/" + name,
+                url = SD.hostSpecialist + "​/api​/specialits/list/" + name,
                 //accessToken = accessToken
-            });
+            }, API.SpecialistAPI);
         }
 
         
@@ -73,9 +73,9 @@ namespace WebSpeciliste.services
             {
                 method = SD.MethodType.PUT,
                 data = specialist,
-                url = SD.host + "/api/specialits/" + id,
+                url = SD.hostSpecialist + "/api/specialits/" + id,
                 //accessToken = accessToken
-            });
+            }, API.SpecialistAPI);
         }
     }
 }

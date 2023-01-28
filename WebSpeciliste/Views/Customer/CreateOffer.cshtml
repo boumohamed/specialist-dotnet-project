@@ -1,0 +1,126 @@
+﻿@model WebSpeciliste.Models.OfferDto
+
+<div class="container-xxl py-5 bg-dark page-header mb-5">
+    <div class="container my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Offers</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb text-uppercase">
+                <li class="breadcrumb-item"><a href="#">Specialist</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Create</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<h1 class="text-center mb-5 wow fadeInUp text-primary" data-wow-delay="0.1s">Create Your New Offer</h1>
+<div class="row g-4">
+
+    <div class="col-md-12">
+        <div class="wow fadeInUp" data-wow-delay="0.5s">
+            <form asp-action="CreateOffer">
+                <div class="row g-3">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="text" asp-for="titre" class="form-control" id="titre" placeholder="titre">
+                            <label for="name">Offer Title</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="text" asp-for="city" class="form-control" id="city" placeholder="city">
+                            <label for="name">City</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="date" asp-for="delay" class="form-control" id="delay" placeholder="Limit Date">
+                            <label for="name">Delay</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="diploma" name="diploma" value="true">
+                        <label class="form-check-label" for="diploma">
+                            Diploma Required
+                        </label>
+                    </div>
+                    </div>
+
+                    
+
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <select class="form-select border-0 form-control" name="experience" asp-for="experience" id="experience">
+                                <option value="0 - 2">0 - 2 years</option>
+                                <option value="3 - 4">3 - 4 years</option>
+                                <option value="plus 5">plus 5 years</option>
+                            </select>
+                            <label for="speciality">Experience required</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <select class="form-select border-0 form-control" name="speciality" asp-for="speciality" id="speciality">
+                                <option value="Marketing">Marketing</option>
+                                <option value="Customer Service">Customer Service</option>
+                                <option value="Human Resource">Human Resource</option>
+                                <option value="Project Management">Project Management</option>
+                                <option value="Sales & Communication">Sales & Communication</option>
+                                <option value="Business Development">Business Development</option>
+                                <option value="Teaching & Education">Teaching & Education</option>
+                                <option value="Design & Creative">Design & Creative</option>
+                            </select>
+                            <label for="speciality">Offer speciality</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <select class="form-select border-0 form-control" name="budget" asp-for="budget" id="speciality">
+                                <option value="40$ - 100$">40$ - 100$</option>
+                                <option value="100$ - 150$">100$ - 150$</option>
+                                <option value="160$ - 200$">160$ - 200$</option>
+                                <option value="plus 200$">plus 200$</option>
+                            </select>
+                            <label for="speciality">Offer budget</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <select class="form-select border-0 form-control" name="type" asp-for="type" id="type">
+                                <option value="Full Time">Full Time</option>
+                                <option value="Part Time">Part Time</option>
+                            </select>
+                            <label for="speciality">Offer Type</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="">
+                            <textarea type="text" asp-for="description" class="form-control" id="description" placeholder="description" rows="4" cols="50"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-floating">
+                            <input type="text" asp-for="customerId" class="form-control" id="customerId" placeholder="customerId">
+                            <label for="phone">Customer id</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100 py-3" type="submit">Publish</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    @*
+    @foreach (var er in ViewBag.Error)
+    {
+    <h1>@er.ErrorMessage</h1>
+    }
+    
+    *@
+   
+

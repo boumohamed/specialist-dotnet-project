@@ -1,14 +1,18 @@
 using WebSpeciliste;
 using WebSpeciliste.services;
+using WebSpeciliste.services.CustomerServices;
 using WebSpeciliste.services.SpecialistsService;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ISpecialist, SpecialistService>();
 builder.Services.AddHttpClient<ISpecialist, SpecialistService>();
-SD.host = builder.Configuration["ServiceUrls:SpecialistAPI"];
+SD.hostSpecialist = builder.Configuration["ServiceUrls:SpecialistAPI"];
+SD.hostCustomer = builder.Configuration["ServiceUrls:CustomerAPI"];
 builder.Services.AddScoped<ISpecialist, SpecialistService>();
+builder.Services.AddScoped<ICustomer, Customerservice>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -51,6 +51,10 @@ namespace CustomerService.Migrations
                     b.Property<string>("offerId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("budget")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("city")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -63,7 +67,21 @@ namespace CustomerService.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<DateTime>("delay")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("diploma")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("experience")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("speciality")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -71,6 +89,10 @@ namespace CustomerService.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("offerId");
 
