@@ -8,7 +8,7 @@
 # 4. Home Page
 ![image](https://user-images.githubusercontent.com/62290643/210154107-b1720050-2ff8-4bff-9a46-15a07012ab90.png)
 # 5. specialists Listing
-![specialists](https://user-images.githubusercontent.com/62290643/215287480-d16f81d2-a219-470d-90a9-7f99f67214ff.gif)
+![Home Page - FYS](https://user-images.githubusercontent.com/62290643/215538299-f88e2968-d9be-4bc5-9589-155e57093193.gif)
 # 6. Offers Listing
 ![offers](https://user-images.githubusercontent.com/62290643/215287528-ef169ee6-a8bc-4725-b879-d117a2499fab.gif)
 
