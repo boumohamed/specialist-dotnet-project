@@ -1,6 +1,6 @@
 # specialist-dotnet-project
 # 1. class diagram
-![image](https://user-images.githubusercontent.com/62290643/215458787-90873bf4-effb-4d53-abe1-e26399ce94e5.png)
+![image](https://user-images.githubusercontent.com/62290643/215459172-8534ba97-095d-486d-b1d7-b466ba27ec67.png)
 # 1. use case diagram
 # 3. specialist api endpoints
 ![image](https://user-images.githubusercontent.com/62290643/206857769-ccc20f32-f915-4a7b-9fa0-f11a66362f75.png)
