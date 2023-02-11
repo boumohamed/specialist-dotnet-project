@@ -71,38 +71,38 @@ namespace SpecilisteServiceApi.Migrations
                     b.HasData(
                         new
                         {
-                            id = "afc9354c-f919-438b-9a69-2aa689477dba",
-                            Email = "Bouzri@gmail.com",
-                            FirstName = "Mohamed",
+                            id = "edb3c0d3-8391-4776-b358-61451de18e2e",
+                            Email = "Fedouache@gmail.com",
+                            FirstName = "Fedouache",
                             Image = "https://ilchiro.org/wp-content/uploads/2019/06/storyblocks-happy-doctor-standing-with-a-laptop_S8lrSrNa-z-1-1280x640.jpg",
-                            LastName = "Bouzri",
+                            LastName = "Ayoub",
+                            Speciality = "Medcin",
+                            city = "Tanger",
+                            joined = new DateTime(2023, 2, 11, 23, 46, 46, 632, DateTimeKind.Local).AddTicks(7413)
+                        },
+                        new
+                        {
+                            id = "00322ad2-3c8e-47e3-be11-d52f96787a45",
+                            Email = "Oubari@gmail.com",
+                            FirstName = "Hicham",
+                            Image = "https://avatars.githubusercontent.com/u/75031773?v=4",
+                            LastName = "Oubari",
                             Speciality = "Medcin",
                             Tel = "06555891",
                             city = "Casablanca",
-                            joined = new DateTime(2023, 1, 24, 7, 49, 9, 546, DateTimeKind.Local).AddTicks(3778)
+                            joined = new DateTime(2023, 2, 11, 23, 46, 46, 632, DateTimeKind.Local).AddTicks(7474)
                         },
                         new
                         {
-                            id = "2ca13c16-72e1-42bb-b75b-c106e84036de",
-                            Email = "sanae@gmail.com",
-                            FirstName = "Sanae",
-                            Image = "https://ilchiro.org/wp-content/uploads/2019/06/storyblocks-happy-doctor-standing-with-a-laptop_S8lrSrNa-z-1-1280x640.jpg",
-                            LastName = "Bouzri",
+                            id = "6cae05fd-20fb-47c2-8b47-b29b21bfeca3",
+                            Email = "Bouzri@gmail.com",
+                            FirstName = "Bouzri",
+                            Image = "https://avatars.githubusercontent.com/u/62290643?v=4",
+                            LastName = "Mohamed",
                             Speciality = "Medcin",
                             Tel = "06555891",
                             city = "rabat",
-                            joined = new DateTime(2023, 1, 24, 7, 49, 9, 546, DateTimeKind.Local).AddTicks(3836)
-                        },
-                        new
-                        {
-                            id = "92754c30-1149-4d99-b379-0e0d2a4d0373",
-                            Email = "jana@gmail.com",
-                            FirstName = "Jana",
-                            Image = "https://ilchiro.org/wp-content/uploads/2019/06/storyblocks-happy-doctor-standing-with-a-laptop_S8lrSrNa-z-1-1280x640.jpg",
-                            LastName = "Bouzri",
-                            Speciality = "Medcin",
-                            city = "Tanger",
-                            joined = new DateTime(2023, 1, 24, 7, 49, 9, 546, DateTimeKind.Local).AddTicks(3848)
+                            joined = new DateTime(2023, 2, 11, 23, 46, 46, 632, DateTimeKind.Local).AddTicks(7501)
                         });
                 });
 #pragma warning restore 612, 618

@@ -75,3 +75,39 @@ C:\Users\PC\Desktop\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\ref
 C:\Users\PC\Desktop\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.pdb
 C:\Users\PC\Desktop\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.genruntimeconfig.cache
 C:\Users\PC\Desktop\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\ref\WebSpeciliste.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\appsettings.json
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\WebSpeciliste.staticwebassets.runtime.json
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\WebSpeciliste.exe
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\WebSpeciliste.deps.json
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\WebSpeciliste.runtimeconfig.json
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\WebSpeciliste.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\WebSpeciliste.pdb
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\Aggregates.NET.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\Aggregates.NET.NewtonsoftJson.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.csproj.AssemblyReference.cache
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.AssemblyInfoInputs.cache
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.AssemblyInfo.cs
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.csproj.CoreCompileInputs.cache
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.RazorAssemblyInfo.cache
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.RazorAssemblyInfo.cs
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\scopedcss\bundle\WebSpeciliste.styles.css
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\scopedcss\projectbundle\WebSpeciliste.bundle.scp.css
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.csproj.CopyComplete
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\refint\WebSpeciliste.dll
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.pdb
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\WebSpeciliste.genruntimeconfig.cache
+C:\Users\Dell Latitude 7490\Desktop\EMSI5IIR\DOTNET\Projet_DOTNET\specialist-dotnet-project\WebSpeciliste\obj\Debug\net6.0\ref\WebSpeciliste.dll

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\SpecilisteServiceApi\\SpecilisteServiceApi.csproj": {}
+    "C:\\Users\\Dell Latitude 7490\\Desktop\\EMSI5IIR\\DOTNET\\Projet_DOTNET\\specialist-dotnet-project\\SpecilisteServiceApi\\SpecilisteServiceApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\SpecilisteServiceApi\\SpecilisteServiceApi.csproj": {
+    "C:\\Users\\Dell Latitude 7490\\Desktop\\EMSI5IIR\\DOTNET\\Projet_DOTNET\\specialist-dotnet-project\\SpecilisteServiceApi\\SpecilisteServiceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\SpecilisteServiceApi\\SpecilisteServiceApi.csproj",
+        "projectUniqueName": "C:\\Users\\Dell Latitude 7490\\Desktop\\EMSI5IIR\\DOTNET\\Projet_DOTNET\\specialist-dotnet-project\\SpecilisteServiceApi\\SpecilisteServiceApi.csproj",
         "projectName": "SpecilisteServiceApi",
-        "projectPath": "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\SpecilisteServiceApi\\SpecilisteServiceApi.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\specialist-dotnet-project\\SpecilisteServiceApi\\obj\\",
+        "projectPath": "C:\\Users\\Dell Latitude 7490\\Desktop\\EMSI5IIR\\DOTNET\\Projet_DOTNET\\specialist-dotnet-project\\SpecilisteServiceApi\\SpecilisteServiceApi.csproj",
+        "packagesPath": "C:\\Users\\Dell Latitude 7490\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell Latitude 7490\\Desktop\\EMSI5IIR\\DOTNET\\Projet_DOTNET\\specialist-dotnet-project\\SpecilisteServiceApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell Latitude 7490\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,8 +85,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -98,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

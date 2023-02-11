@@ -67,7 +67,7 @@ namespace WebSpeciliste.services
         }
 
         
-        public async Task<T> UpdateSpecialistAsync<T>(string id, SpecialistDto specialist)
+        public async Task<T> UpdateSpecialistAsync<T>(string id,SpecialistDto specialist)
         {
             return await this.SendDataAsync<T>(new ApiRequest()
             {
